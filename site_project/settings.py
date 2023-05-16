@@ -180,6 +180,8 @@ INSTALLED_APPS = [
     'djangocms_video',
     'site_project',
     'file_project',
+    'page_additions',
+    'seo',
 ]
 
 LANGUAGES = (
