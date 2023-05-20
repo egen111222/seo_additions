@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import SeoTag,SeoAddition
+from .models import SeoKeyWord,SeoAddition
 
-admin.site.register(SeoTag)
+admin.site.register(SeoKeyWord)
 admin.site.register(SeoAddition)
