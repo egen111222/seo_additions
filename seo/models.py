@@ -13,3 +13,6 @@ class SeoAddition(models.Model):
 
     def __str__(self):
         return self.element
+
+class DomainName(models.Model):
+    domain = models.CharField(max_length=50)

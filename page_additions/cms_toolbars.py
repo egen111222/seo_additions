@@ -8,7 +8,7 @@ from .extensions import (SeoKeyWordExtension,
 class SeoKeyWordExtensionToolbar(ExtensionToolbar):
     model = SeoKeyWordExtension
     def populate(self):
-        global_populate(self,"SEO KEYS")
+        global_populate(self,"SEO EXTENSION")
 
 @toolbar_pool.register
 class ThemeExtensionToolbar(ExtensionToolbar):
