@@ -1,12 +1,6 @@
-{% extends request.current_page.themeextension.theme.template %}
+{% extends request.current_page.themeextension.theme.template|default:'base.html' %}
 
 {% load cms_tags %}
-
-
-
-
-
-
 
 
 {% block title %}{% page_attribute "page_title" %}{% endblock title %}
