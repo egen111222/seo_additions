@@ -1,8 +1,21 @@
-{% extends "base.html" %}
+{% extends request.current_page.themeextension.theme.template %}
+
 {% load cms_tags %}
+
+
+
+
+
+
+
 
 {% block title %}{% page_attribute "page_title" %}{% endblock title %}
 
 {% block content %}
+
+{% if request.%}
 	{% placeholder "content" %}
+{% endif %}
+
 {% endblock content %}
+
