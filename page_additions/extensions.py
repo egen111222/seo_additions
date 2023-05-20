@@ -9,7 +9,7 @@ class ThemeExtension(PageExtension):
 
 class SeoKeyWordExtension(PageExtension):
     keywords = models.ManyToManyField(SeoKeyWord)
-    
+
 
 extension_pool.register(ThemeExtension)
 extension_pool.register(SeoKeyWordExtension)

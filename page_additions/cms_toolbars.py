@@ -10,7 +10,6 @@ class SeoKeyWordExtensionToolbar(ExtensionToolbar):
     def populate(self):
         global_populate(self,"SEO KEYS")
 
-
 @toolbar_pool.register
 class ThemeExtensionToolbar(ExtensionToolbar):
     model = ThemeExtension

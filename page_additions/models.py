@@ -6,3 +6,10 @@ class Theme(models.Model):
 
     def __str__(self):
         return self.name
+
+
+class DomainName(models.Model):
+    domain_name = models.CharField(max_length=250)
+
+    def __str__(self):
+        return self.domain_name

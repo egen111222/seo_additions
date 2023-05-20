@@ -4,7 +4,7 @@ class SeoKeyWord(models.Model):
     keyword = models.CharField(max_length=150)
 
     def __str__(self):
-        return self.tag
+        return self.keyword
 
 class SeoAddition(models.Model):
     element = models.CharField(max_length=50)
