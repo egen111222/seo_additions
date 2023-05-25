@@ -1,12 +1,12 @@
 from cms.toolbar_pool import toolbar_pool
 from cms.extensions.toolbar import ExtensionToolbar
 from .libs import global_populate
-from .extensions import (SeoKeyWordExtension,
+from .extensions import (SeoExtension,
                          ThemeExtension)
 
 @toolbar_pool.register
 class SeoKeyWordExtensionToolbar(ExtensionToolbar):
-    model = SeoKeyWordExtension
+    model = SeoExtension
     def populate(self):
         global_populate(self,"SEO EXTENSION")
 
