@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<urlset>
+	{% for page in pages %}
+	<url>
+		<loc>{{request.scheme}}://{{domain}}{{page.get_absolute_url}}</loc>
+		<changefreq>weekly</changefreq>
+		<priority>1.0</priority>
+	</url>
+	{% endfor %}
+</urlset>
